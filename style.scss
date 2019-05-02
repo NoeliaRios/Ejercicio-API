@@ -1,3 +1,11 @@
+$medida-fuente: 18px;
+
 body{
     background: blue;
+    color: red;
+    font-size: 18px;
+}
+
+p{
+    font-size: $medida-fuente;
 }
