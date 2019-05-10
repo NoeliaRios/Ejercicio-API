@@ -1,0 +1,31 @@
+
+.movie-info {
+
+    img{
+        width: 10%;
+        height: auto;
+    }
+
+    #rated{
+        @include opacity(0.5);
+    }
+    h2.title{
+        color: black;
+        font-weight: 900;
+        font-size: 35px;
+        @include center();
+    }
+
+    .written-by{
+        strong{
+            font-weight: 1000;
+            
+        }
+
+        span{
+            @include truncate(100px)
+
+            
+        }
+    }
+}
