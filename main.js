@@ -10,7 +10,8 @@ const description = document.querySelector('.movie-info .description');
 const writtenBy = document.querySelector('.movie-info .written-by span');
 const directedBy = document.querySelector('.movie-info .directed-by span');
 const starring = document.querySelector('.movie-info .starring span');
-const image = document.querySelector('#movie img');
+const image = document.querySelector('.poster-central img');
+const imageBlur = document.getElementById('#poster img');
 
 
 
