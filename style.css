@@ -1,6 +1,8 @@
-.movie-info img {
-  width: 10%;
-  height: auto;
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 30px;
 }
 .movie-info #rated {
   opacity: 0.5;
@@ -9,9 +11,10 @@
   color: black;
   font-weight: 900;
   font-size: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 12px;
+}
+.movie-info .written-by p {
+  line-height: 1.5;
 }
 .movie-info .written-by strong {
   font-weight: 1000;
@@ -21,6 +24,18 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.movie-info .data {
+  margin-left: 40px;
+  font-size: 0.75em;
+  color: darkgray;
+}
+.movie-info .data span {
+  margin-left: 12px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -36,15 +51,15 @@ body {
 
 #movie-card {
   background-color: white;
-  width: 705px;
-  min-height: 200px;
+  width: 800px;
+  min-height: 400px;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 30px 18px -24px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  padding: 50px;
+  padding: 30px;
 }
 #movie-card #busqueda {
   display: flex;
@@ -63,31 +78,30 @@ body {
   border-radius: 2px;
   z-index: 2px;
 }
-#movie-card #movie-info {
-  padding: 50px;
-  width: 50%;
-}
-#movie-card #movie-info .poster-central {
-  width: 15%;
+
+.poster-central {
+  width: 30%;
   display: flex;
   justify-content: flex-end;
-  margin: auto;
-}
-#movie-card #movie-info .poster-central img {
-  width: 50px;
-  height: 100px;
-  z-index: 1px;
+  align-items: center;
+  margin: 20px;
 }
 
-#poster-blur {
+img {
+  width: 145px;
+  height: 215px;
+  z-index: 1;
+}
+
+.poster-blur {
   position: absolute;
   overflow: hidden;
   bottom: -20%;
-  left: -20%;
+  left: -15%;
   height: 150%;
   transform: rotate(5deg);
 }
-#poster-blur img {
+.poster-blur img {
   filter: blur(6px);
   object-fit: cover;
   width: 100%;

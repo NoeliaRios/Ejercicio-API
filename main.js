@@ -11,7 +11,7 @@ const writtenBy = document.querySelector('.movie-info .written-by span');
 const directedBy = document.querySelector('.movie-info .directed-by span');
 const starring = document.querySelector('.movie-info .starring span');
 const image = document.querySelector('.poster-central img');
-const imageBlur = document.getElementById('#poster img');
+const imageBlur = document.querySelector('.poster-blur img');
 
 
 
@@ -33,6 +33,7 @@ input.addEventListener('keypress', function (event) {
                 directedBy.innerText = movie.Director;
                 starring.innerText = movie.Actors;
                 image.src = movie.Poster;
+                imageBlur.src = movie.Poster;
             })
     }
 });

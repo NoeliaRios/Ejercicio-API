@@ -1,10 +1,9 @@
-
 .movie-info {
 
-    img{
-        width: 10%;
-        height: auto;
-    }
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin:30px;
 
     #rated{
         @include opacity(0.5);
@@ -13,19 +12,35 @@
         color: black;
         font-weight: 900;
         font-size: 35px;
-        @include center();
+        margin-bottom: 12px;
+        
     }
 
     .written-by{
+
+        p{
+           line-height: 1.5; 
+        }
+
+
         strong{
             font-weight: 1000;
             
         }
 
         span{
-            @include truncate(100px)
-
+            @include truncate(100px)           
             
+        }
+    }
+
+    .data{
+        margin-left: 40px;
+        font-size: 0.75em;
+        color: darkgray;
+
+        span{
+            margin-left: 12px;
         }
     }
 }
